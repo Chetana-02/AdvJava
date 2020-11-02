@@ -25,7 +25,7 @@ public class UserDaoImple implements Userdao {
 		s.setString(1, user.getFname());
 		s.setString(2, user.getMname());
 		s.setString(3, user.getLname());
-		s.setInt(4, user.getAnum());
+		s.setString(4, user.getAnum());
 		s.setInt(5, user.getPnum());
 		s.setString(6, user.getMonum());
 		s.setString(7, user.getAddress());

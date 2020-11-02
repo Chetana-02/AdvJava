@@ -32,7 +32,7 @@
 				
 				<tr>
 				   <td>Enter valid Aadhar card Number</td>
-				   <td><input type="text" name="anum" required /></td>
+				   <td><input type="text" name="anum" maxlength="12" required /></td>
 				</tr>
 				
 				<tr>

@@ -26,9 +26,12 @@
 				</tr>
 				
 				<tr>
-				   <td><a href="reg_form.jsp">SignUp</a></td>
 				   <td><input type="submit" value="Login"></td>
+				   <td><a href="reg_form.jsp">SignUp</a></td>
+				   
 				</tr>
+				
+				
 				
 				 <tr>
 				   <td colspan="2" style="color:red;font-size:15;text-align:center;">

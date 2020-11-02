@@ -5,7 +5,7 @@ public class User {
      private String fname;
      private String mname;
      private String lname;
-     private int anum;
+     private String anum;
      private int pnum;
      private String address;
      private String monum;
@@ -48,11 +48,11 @@ public class User {
 		this.lname = lname;
 	}
 
-	public int getAnum() {
+	public String getAnum() {
 		return anum;
 	}
 
-	public void setAnum(int anum) {
+	public void setAnum(String anum) {
 		this.anum = anum;
 	}
 
