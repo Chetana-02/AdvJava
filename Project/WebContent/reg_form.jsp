@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -52,7 +53,7 @@ h2{
 
 .col-md-6{
 	
-     margin-top: 35ex;
+     margin-top: 20ex;
      align-content: center;
      justify-content: center;
      text-align: center;
@@ -69,25 +70,24 @@ h2{
 
 </head>
    <body>
+   
+         <%@ include file="header1.jsp" %> 
+   
      	<form  action="reg.jsp" method="post">    
 	      <div class="container-fluid">
 	   		<div class="row">	   		  
 	   	   		  <div class="col-md-6">
 	   		      <h1 style="font-size: 55px">REGISTER WITH US</h1>
 	   		      <h1 style="color: red;font-size:60px">TO EXPERIENCE</h1>
-	   		      <h1 style="font-size:45px;margin-top:30px;color: purple">SECURE BANKING</h1>	   		  
+	   		      <h1 style="font-size:45px;margin-top:30px;color: purple">"SECURE BANKING"</h1>	   		  
 	   		  </div>
 	   		  
 	   		    <div class="col-md-4">
 	   		  	<h2 class="text-left"  style="font-size: 50px; color: purple">Valid Information needed for Registration<span class="require">(*Required)</span></h2>
 	   		  	    <input type="text" class="form-control" name="fname" placeholder="*First name" required >
 	   		  		<input type="text" class="form-control" name="mname" placeholder="*Middle name" required >
-	   		  		<input type="text" class="form-control" name="lname" placeholder="*Last name" required >	
-	   		  		<input type="text" class="form-control" name="anum" placeholder="*Aadhar Number" minlength="12" maxlength="12" required >
-	   		  		<input type="text" class="form-control" name="pnum" placeholder="Pan Number" required >
-	   		  		<input type="text" class="form-control" name="address" placeholder="*Residential Address" required >	   		  		   		  		
+	   		  		<input type="text" class="form-control" name="lname" placeholder="*Last name" required >		   		  	   		  		   		  		
 	   		  		<input type="text" class="form-control" name="uname" placeholder="*User name" required >
-	   		  		<input type="email" class="form-control" name="email" placeholder="*Email" required >
 	   		  	    <input type="password" class="form-control" name="pass" placeholder="*Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>	   		  	    
 	   		  	    <input type="submit" value="Register" class="btn btn-info">
 	   		  	     <a href="login.jsp" class="btn btn-info" role="button">Back</a>	   		  	    

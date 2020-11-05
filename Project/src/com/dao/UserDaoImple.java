@@ -21,16 +21,12 @@ public class UserDaoImple implements Userdao {
 		int i = 0;
 		try {
 		Connection con = myConn.getConn();
-		PreparedStatement s = con.prepareStatement("insert into user3(Fname,Mname,Lname,Aadhar_No,Pan_No,Mob_No,Adrs,user_Name,user_Pass) values(?,?,?,?,?,?,?,?,?)");
+		PreparedStatement s = con.prepareStatement("insert into user3(Fname,Mname,Lname,user_Name,user_Pass) values(?,?,?,?,?)");
 		s.setString(1, user.getFname());
 		s.setString(2, user.getMname());
-		s.setString(3, user.getLname());
-		s.setString(4, user.getAnum());
-		s.setInt(5, user.getPnum());
-		s.setString(6, user.getMonum());
-		s.setString(7, user.getAddress());
-		s.setString(8, user.getUname());
-		s.setString(9, user.getPass());
+		s.setString(3, user.getLname());		
+		s.setString(4, user.getUname());
+		s.setString(5, user.getPass());
 
 		i = s.executeUpdate();
 		s.close();
@@ -46,11 +42,12 @@ public class UserDaoImple implements Userdao {
          try {
 		Connection con = myConn.getConn();
 		PreparedStatement s = con.prepareStatement(
-				"select * from user3 where user_Name=? and user_Pass=?");
+				"select * from user3  where user_Name=? and user_Pass=?");
 		s.setString(1, user.getUname());
 		s.setString(2, user.getPass());
 		ResultSet rs = s.executeQuery();
 		if(rs.next()) {
+			user.setUserId(rs.getInt("userId"));
 			flag = true;
 		}
 		s.close();

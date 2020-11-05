@@ -10,6 +10,6 @@
 	if(b){
 		response.sendRedirect("home.jsp");
 	}else{
-		response.sendRedirect("login.jsp?error_msg= please check your user name or Password");
+		response.sendRedirect("login.jsp?error_msg= please check your user name and Password");
 	}
 %>

@@ -1,13 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"%> 
+    
+   
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
 
 <title>Login Page</title>
 <style>
@@ -46,13 +50,13 @@ h2{
 }
 
 .col-md-4{
-     margin-top: 25ex;
+     margin-top: 20ex;
      margin-left: 90px;
 }
 
 .col-md-6{
 	
-     margin-top: 35ex;
+     margin-top: 20ex;
      align-content: center;
      justify-content: center;
      text-align: center;
@@ -64,6 +68,9 @@ h2{
 
 </head>
    <body>
+      <%@ include file="header1.jsp" %> 
+   
+   
      	<form  action="validate.jsp" method="post">    
 	      <div class="container-fluid">
 	   		<div class="row">
@@ -73,8 +80,7 @@ h2{
 	   		  		<input type="text" class="form-control" name="uname" placeholder="User name" required >
 	   		  	    <input type="password" class="form-control" name="pass" placeholder="password" required>
 	   		  	    <p class="text-right"><a href="#">Forget Password</a></p>
-	   		  	    <input type="submit" value="Login" class="btn btn-info">
-	   		  	    
+	   		  	    <input type="submit" value="Login" class="btn btn-info">	   		  	    
 	   		  </div>
 	   		  
 	   		  	
@@ -82,10 +88,9 @@ h2{
 	   		      <h1 style="font-size: 55px">WELCOME TO</h1>
 	   		      <h1 style="color: red;font-size:60px">APNI BANK</h1>
 	   		      <h1 style="font-size:45px;margin-top:30px;color: purple">"Your Perfect Banking Partner"</h1>	   		  
-	   		  </div>
-	   		  
+	   		  </div>	   		  
 	   		</div>
-	    </div>									
-	</form>
+	       </div>						  							
+    	</form>	
 </body>
 </html>
